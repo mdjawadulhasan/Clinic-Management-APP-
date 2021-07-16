@@ -1,0 +1,12 @@
+C:\Users\Lenovo\Desktop\Clinic\bin\Debug\Clinic.exe.config
+C:\Users\Lenovo\Desktop\Clinic\bin\Debug\Clinic.exe
+C:\Users\Lenovo\Desktop\Clinic\bin\Debug\Clinic.pdb
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.csprojAssemblyReference.cache
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Appoinment.resources
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Login.resources
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Splash.resources
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Properties.Resources.resources
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.csproj.GenerateResource.cache
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.exe
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.pdb
