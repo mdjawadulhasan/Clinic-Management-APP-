@@ -36,5 +36,13 @@ namespace Clinic
                 MessageBox.Show(Ex.Message);
             }
         }
+
+        private void Patient_Load(object sender, EventArgs e)
+        {
+            MyPatient Pat = new MyPatient();
+            string query ="select *from PatientTbl";
+            DataSet ds = Pat.ShowPatient(query);
+            PatientDGV.DataSource = ds.Tables[0];
+        }
     }
 }

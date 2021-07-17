@@ -59,7 +59,7 @@ namespace Clinic
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.PatientDGV = new System.Windows.Forms.DataGridView();
             this.label15 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -71,7 +71,7 @@ namespace Clinic
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PatientDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -415,16 +415,16 @@ namespace Clinic
             this.label9.TabIndex = 17;
             this.label9.Text = "Name";
             // 
-            // dataGridView1
+            // PatientDGV
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(283, 421);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(931, 331);
-            this.dataGridView1.TabIndex = 30;
+            this.PatientDGV.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.PatientDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PatientDGV.Location = new System.Drawing.Point(283, 421);
+            this.PatientDGV.Name = "PatientDGV";
+            this.PatientDGV.RowHeadersWidth = 51;
+            this.PatientDGV.RowTemplate.Height = 24;
+            this.PatientDGV.Size = new System.Drawing.Size(931, 331);
+            this.PatientDGV.TabIndex = 30;
             // 
             // label15
             // 
@@ -456,12 +456,13 @@ namespace Clinic
             this.ClientSize = new System.Drawing.Size(1232, 764);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.PatientDGV);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Patient";
             this.Text = "Patient";
+            this.Load += new System.EventHandler(this.Patient_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -473,7 +474,7 @@ namespace Clinic
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PatientDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -509,7 +510,7 @@ namespace Clinic
         private System.Windows.Forms.TextBox PatPhooneTb;
         private System.Windows.Forms.TextBox AllergyTb;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView PatientDGV;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox pictureBox7;
