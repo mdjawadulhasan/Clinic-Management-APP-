@@ -52,7 +52,7 @@ namespace Clinic
             this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(109, 303);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 25);
+            this.label1.Size = new System.Drawing.Size(157, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Hospital App";
             // 
@@ -63,17 +63,17 @@ namespace Clinic
             this.progressBar1.Size = new System.Drawing.Size(312, 15);
             this.progressBar1.TabIndex = 2;
             // 
-            // Form1
+            // Splash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(373, 450);
+            this.ClientSize = new System.Drawing.Size(373, 536);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
