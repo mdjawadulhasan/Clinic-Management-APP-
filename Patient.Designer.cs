@@ -46,15 +46,15 @@ namespace Clinic
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.AllergyTb = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.AdressTb = new System.Windows.Forms.TextBox();
             this.PatPhooneTb = new System.Windows.Forms.TextBox();
             this.PatNameTb = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.GenderTb = new System.Windows.Forms.ComboBox();
             this.save = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DOBDate = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -258,15 +258,15 @@ namespace Clinic
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.AllergyTb);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.AdressTb);
             this.panel2.Controls.Add(this.PatPhooneTb);
             this.panel2.Controls.Add(this.PatNameTb);
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.GenderTb);
             this.panel2.Controls.Add(this.save);
-            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.DOBDate);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
@@ -276,22 +276,22 @@ namespace Clinic
             this.panel2.Size = new System.Drawing.Size(946, 294);
             this.panel2.TabIndex = 17;
             // 
-            // textBox4
+            // AllergyTb
             // 
-            this.textBox4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox4.Font = new System.Drawing.Font("Rockwell", 13.8F);
-            this.textBox4.Location = new System.Drawing.Point(563, 116);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(240, 74);
-            this.textBox4.TabIndex = 29;
+            this.AllergyTb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.AllergyTb.Font = new System.Drawing.Font("Rockwell", 13.8F);
+            this.AllergyTb.Location = new System.Drawing.Point(551, 122);
+            this.AllergyTb.Multiline = true;
+            this.AllergyTb.Name = "AllergyTb";
+            this.AllergyTb.Size = new System.Drawing.Size(240, 74);
+            this.AllergyTb.TabIndex = 29;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.label14.Location = new System.Drawing.Point(426, 123);
+            this.label14.Location = new System.Drawing.Point(414, 129);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(131, 31);
             this.label14.TabIndex = 28;
@@ -337,14 +337,17 @@ namespace Clinic
             this.label13.TabIndex = 24;
             this.label13.Text = "Phone";
             // 
-            // comboBox2
+            // GenderTb
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Rockwell", 13.8F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(563, 62);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(250, 34);
-            this.comboBox2.TabIndex = 1;
+            this.GenderTb.Font = new System.Drawing.Font("Rockwell", 13.8F);
+            this.GenderTb.FormattingEnabled = true;
+            this.GenderTb.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.GenderTb.Location = new System.Drawing.Point(551, 68);
+            this.GenderTb.Name = "GenderTb";
+            this.GenderTb.Size = new System.Drawing.Size(250, 34);
+            this.GenderTb.TabIndex = 1;
             // 
             // save
             // 
@@ -358,22 +361,22 @@ namespace Clinic
             this.save.TabIndex = 23;
             this.save.Text = "Save";
             this.save.UseVisualStyleBackColor = false;
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
-            // dateTimePicker1
+            // DOBDate
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Rockwell", 13.8F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(563, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(207, 35);
-            this.dateTimePicker1.TabIndex = 21;
+            this.DOBDate.Font = new System.Drawing.Font("Rockwell", 13.8F);
+            this.DOBDate.Location = new System.Drawing.Point(551, 9);
+            this.DOBDate.Name = "DOBDate";
+            this.DOBDate.Size = new System.Drawing.Size(377, 35);
+            this.DOBDate.TabIndex = 21;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.label12.Location = new System.Drawing.Point(478, 7);
+            this.label12.Location = new System.Drawing.Point(466, 13);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(79, 31);
             this.label12.TabIndex = 20;
@@ -384,7 +387,7 @@ namespace Clinic
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.label11.Location = new System.Drawing.Point(450, 62);
+            this.label11.Location = new System.Drawing.Point(438, 68);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(107, 31);
             this.label11.TabIndex = 19;
@@ -495,16 +498,16 @@ namespace Clinic
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button save;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker DOBDate;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox GenderTb;
         private System.Windows.Forms.TextBox PatNameTb;
         private System.Windows.Forms.TextBox AdressTb;
         private System.Windows.Forms.TextBox PatPhooneTb;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox AllergyTb;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label15;

@@ -10,3 +10,7 @@ C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.csproj.GenerateResource.cache
 C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.exe
 C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.pdb
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Patient.resources
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Presecription.resources
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Treatment.resources
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Users.resources

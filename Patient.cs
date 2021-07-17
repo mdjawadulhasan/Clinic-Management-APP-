@@ -21,5 +21,20 @@ namespace Clinic
         {
 
         }
+
+        private void save_Click(object sender, EventArgs e)
+        {
+            string query = "insert into PatientTbl values('" + PatNameTb.Text + "','" + PatPhooneTb.Text + "','" + AdressTb.Text + "','" + DOBDate.Value.Date + "','" + GenderTb.SelectedItem.ToString() + "','" + AllergyTb.Text + "')";
+            MyPatient Pat = new MyPatient();
+            try
+            {
+                Pat.AddPatient(query);
+                MessageBox.Show("Patient Succesfully Aded");
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
     }
 }

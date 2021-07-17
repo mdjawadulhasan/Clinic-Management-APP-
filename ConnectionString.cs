@@ -12,7 +12,7 @@ namespace Clinic
         public SqlConnection GetCon()
         {
             SqlConnection Con = new SqlConnection();
-            Con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Lenovo\Documents\ClinicDb.mdf;Integrated Security=True;Connect Timeout=30"
+            Con.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Lenovo\Documents\ClinicDb.mdf;Integrated Security=True;Connect Timeout=30";
             return Con;
         }
 
