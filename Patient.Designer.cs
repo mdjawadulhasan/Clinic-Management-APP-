@@ -417,8 +417,11 @@ namespace Clinic
             // 
             // PatientDGV
             // 
-            this.PatientDGV.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.PatientDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.PatientDGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.PatientDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.PatientDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PatientDGV.GridColor = System.Drawing.Color.Cyan;
             this.PatientDGV.Location = new System.Drawing.Point(283, 421);
             this.PatientDGV.Name = "PatientDGV";
             this.PatientDGV.RowHeadersWidth = 51;
