@@ -46,6 +46,7 @@ namespace Clinic
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btndlt = new System.Windows.Forms.Button();
             this.AllergyTb = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.AdressTb = new System.Windows.Forms.TextBox();
@@ -62,6 +63,7 @@ namespace Clinic
             this.PatientDGV = new System.Windows.Forms.DataGridView();
             this.label15 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnupdate = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -258,6 +260,8 @@ namespace Clinic
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnupdate);
+            this.panel2.Controls.Add(this.btndlt);
             this.panel2.Controls.Add(this.AllergyTb);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.AdressTb);
@@ -275,6 +279,20 @@ namespace Clinic
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(946, 294);
             this.panel2.TabIndex = 17;
+            // 
+            // btndlt
+            // 
+            this.btndlt.BackColor = System.Drawing.Color.Teal;
+            this.btndlt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndlt.Font = new System.Drawing.Font("NSimSun", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndlt.ForeColor = System.Drawing.Color.White;
+            this.btndlt.Location = new System.Drawing.Point(453, 219);
+            this.btndlt.Name = "btndlt";
+            this.btndlt.Size = new System.Drawing.Size(155, 52);
+            this.btndlt.TabIndex = 30;
+            this.btndlt.Text = "Delete";
+            this.btndlt.UseVisualStyleBackColor = false;
+            this.btndlt.Click += new System.EventHandler(this.btndlt_Click);
             // 
             // AllergyTb
             // 
@@ -355,7 +373,7 @@ namespace Clinic
             this.save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.save.Font = new System.Drawing.Font("NSimSun", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.save.ForeColor = System.Drawing.Color.White;
-            this.save.Location = new System.Drawing.Point(377, 214);
+            this.save.Location = new System.Drawing.Point(277, 219);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(155, 52);
             this.save.TabIndex = 23;
@@ -417,17 +435,18 @@ namespace Clinic
             // 
             // PatientDGV
             // 
-            this.PatientDGV.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.PatientDGV.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.PatientDGV.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PatientDGV.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
             this.PatientDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PatientDGV.GridColor = System.Drawing.Color.Cyan;
+            this.PatientDGV.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.PatientDGV.Location = new System.Drawing.Point(283, 421);
             this.PatientDGV.Name = "PatientDGV";
             this.PatientDGV.RowHeadersWidth = 51;
             this.PatientDGV.RowTemplate.Height = 24;
+            this.PatientDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.PatientDGV.Size = new System.Drawing.Size(931, 331);
             this.PatientDGV.TabIndex = 30;
+            this.PatientDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PatientDGV_CellContentClick);
             // 
             // label15
             // 
@@ -450,6 +469,20 @@ namespace Clinic
             this.label8.Size = new System.Drawing.Size(130, 34);
             this.label8.TabIndex = 19;
             this.label8.Text = "Patient ";
+            // 
+            // btnupdate
+            // 
+            this.btnupdate.BackColor = System.Drawing.Color.Teal;
+            this.btnupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnupdate.Font = new System.Drawing.Font("NSimSun", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnupdate.ForeColor = System.Drawing.Color.White;
+            this.btnupdate.Location = new System.Drawing.Point(626, 219);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(155, 52);
+            this.btnupdate.TabIndex = 31;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = false;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // Patient
             // 
@@ -518,5 +551,7 @@ namespace Clinic
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btndlt;
+        private System.Windows.Forms.Button btnupdate;
     }
 }

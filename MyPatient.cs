@@ -24,7 +24,26 @@ namespace Clinic
 
         public void DeletePatietnt(String query)
         {
+            ConnectionString MyConnection = new ConnectionString();
+            SqlConnection Con = MyConnection.GetCon();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Con;
+            Con.Open();
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
+            Con.Close();
+        }
 
+        public void UpdatePatietnt(String query)
+        {
+            ConnectionString MyConnection = new ConnectionString();
+            SqlConnection Con = MyConnection.GetCon();
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = Con;
+            Con.Open();
+            cmd.CommandText = query;
+            cmd.ExecuteNonQuery();
+            Con.Close();
         }
         public DataSet ShowPatient(String query)
         {
