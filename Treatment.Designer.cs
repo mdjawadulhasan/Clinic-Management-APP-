@@ -30,35 +30,36 @@ namespace Clinic
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.TreatCost = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.TreatDesc = new System.Windows.Forms.TextBox();
+            this.TretNameTb = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.TreatmentDGV = new System.Windows.Forms.DataGridView();
+            this.label15 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -66,15 +67,18 @@ namespace Clinic
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TreatmentDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.TreatCost);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.TreatDesc);
+            this.panel2.Controls.Add(this.TretNameTb);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
@@ -83,24 +87,55 @@ namespace Clinic
             this.panel2.Size = new System.Drawing.Size(919, 249);
             this.panel2.TabIndex = 18;
             // 
-            // textBox3
+            // label11
             // 
-            this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.Font = new System.Drawing.Font("Rockwell", 13.8F);
-            this.textBox3.Location = new System.Drawing.Point(114, 128);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(240, 74);
-            this.textBox3.TabIndex = 27;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Modern No. 20", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Teal;
+            this.label11.Location = new System.Drawing.Point(9, 11);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(161, 34);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Treatment";
             // 
-            // textBox1
+            // TreatCost
             // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.Font = new System.Drawing.Font("Rockwell", 13.8F);
-            this.textBox1.Location = new System.Drawing.Point(114, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(240, 35);
-            this.textBox1.TabIndex = 25;
+            this.TreatCost.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TreatCost.Font = new System.Drawing.Font("Rockwell", 13.8F);
+            this.TreatCost.Location = new System.Drawing.Point(522, 51);
+            this.TreatCost.Name = "TreatCost";
+            this.TreatCost.Size = new System.Drawing.Size(240, 35);
+            this.TreatCost.TabIndex = 29;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.label8.Location = new System.Drawing.Point(450, 55);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(66, 31);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Cost";
+            // 
+            // TreatDesc
+            // 
+            this.TreatDesc.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TreatDesc.Font = new System.Drawing.Font("Rockwell", 13.8F);
+            this.TreatDesc.Location = new System.Drawing.Point(180, 111);
+            this.TreatDesc.Multiline = true;
+            this.TreatDesc.Name = "TreatDesc";
+            this.TreatDesc.Size = new System.Drawing.Size(582, 74);
+            this.TreatDesc.TabIndex = 27;
+            // 
+            // TretNameTb
+            // 
+            this.TretNameTb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TretNameTb.Font = new System.Drawing.Font("Rockwell", 13.8F);
+            this.TretNameTb.Location = new System.Drawing.Point(114, 56);
+            this.TretNameTb.Name = "TretNameTb";
+            this.TretNameTb.Size = new System.Drawing.Size(240, 35);
+            this.TretNameTb.TabIndex = 25;
             // 
             // button1
             // 
@@ -108,12 +143,13 @@ namespace Clinic
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("NSimSun", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(372, 177);
+            this.button1.Location = new System.Drawing.Point(215, 194);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 52);
             this.button1.TabIndex = 23;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label10
             // 
@@ -122,9 +158,9 @@ namespace Clinic
             this.label10.ForeColor = System.Drawing.Color.MediumOrchid;
             this.label10.Location = new System.Drawing.Point(8, 127);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 31);
+            this.label10.Size = new System.Drawing.Size(166, 31);
             this.label10.TabIndex = 18;
-            this.label10.Text = "Adress";
+            this.label10.Text = "Description";
             // 
             // label9
             // 
@@ -161,6 +197,27 @@ namespace Clinic
             this.panel1.Size = new System.Drawing.Size(268, 717);
             this.panel1.TabIndex = 19;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(76, 549);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(124, 25);
+            this.label14.TabIndex = 18;
+            this.label14.Text = "Dashboard";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Clinic.Properties.Resources._4;
+            this.pictureBox7.Location = new System.Drawing.Point(12, 526);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(48, 67);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 17;
+            this.pictureBox7.TabStop = false;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -171,6 +228,16 @@ namespace Clinic
             this.label7.Size = new System.Drawing.Size(86, 25);
             this.label7.TabIndex = 14;
             this.label7.Text = "Logout";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Clinic.Properties.Resources._5;
+            this.pictureBox6.Location = new System.Drawing.Point(12, 612);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(48, 67);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 13;
+            this.pictureBox6.TabStop = false;
             // 
             // label6
             // 
@@ -183,6 +250,16 @@ namespace Clinic
             this.label6.TabIndex = 12;
             this.label6.Text = "User";
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Clinic.Properties.Resources._6;
+            this.pictureBox5.Location = new System.Drawing.Point(12, 441);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(48, 67);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 11;
+            this.pictureBox5.TabStop = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -193,6 +270,16 @@ namespace Clinic
             this.label5.Size = new System.Drawing.Size(145, 25);
             this.label5.TabIndex = 10;
             this.label5.Text = "Prescription";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Clinic.Properties.Resources._3;
+            this.pictureBox4.Location = new System.Drawing.Point(12, 346);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(48, 67);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
             // 
             // label4
             // 
@@ -205,6 +292,16 @@ namespace Clinic
             this.label4.TabIndex = 8;
             this.label4.Text = "Treatment";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Clinic.Properties.Resources._2;
+            this.pictureBox3.Location = new System.Drawing.Point(12, 254);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 67);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -215,6 +312,16 @@ namespace Clinic
             this.label3.Size = new System.Drawing.Size(151, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Appointment";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Clinic.Properties.Resources._1;
+            this.pictureBox2.Location = new System.Drawing.Point(12, 166);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 67);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // label2
             // 
@@ -238,36 +345,28 @@ namespace Clinic
             this.label1.TabIndex = 3;
             this.label1.Text = "Hospital App";
             // 
-            // textBox2
+            // pictureBox1
             // 
-            this.textBox2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox2.Font = new System.Drawing.Font("Rockwell", 13.8F);
-            this.textBox2.Location = new System.Drawing.Point(522, 51);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(240, 35);
-            this.textBox2.TabIndex = 29;
+            this.pictureBox1.Image = global::Clinic.Properties.Resources.LOGO;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(78, 103);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
-            // label8
+            // TreatmentDGV
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Modern No. 20", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.label8.Location = new System.Drawing.Point(450, 55);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 31);
-            this.label8.TabIndex = 28;
-            this.label8.Text = "Cost";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(281, 330);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(931, 331);
-            this.dataGridView1.TabIndex = 31;
+            this.TreatmentDGV.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.TreatmentDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TreatmentDGV.Location = new System.Drawing.Point(281, 330);
+            this.TreatmentDGV.Name = "TreatmentDGV";
+            this.TreatmentDGV.RowHeadersWidth = 51;
+            this.TreatmentDGV.RowTemplate.Height = 24;
+            this.TreatmentDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.TreatmentDGV.Size = new System.Drawing.Size(931, 331);
+            this.TreatmentDGV.TabIndex = 31;
+            this.TreatmentDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TreatmentDGV_CellContentClick);
             // 
             // label15
             // 
@@ -280,97 +379,33 @@ namespace Clinic
             this.label15.TabIndex = 32;
             this.label15.Text = "Filter By Name";
             // 
-            // label14
+            // button2
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(76, 549);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(124, 25);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Dashboard";
+            this.button2.BackColor = System.Drawing.Color.Teal;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("NSimSun", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(425, 197);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(155, 52);
+            this.button2.TabIndex = 30;
+            this.button2.Text = "Edit";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label11
+            // button3
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Modern No. 20", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Teal;
-            this.label11.Location = new System.Drawing.Point(9, 11);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(161, 34);
-            this.label11.TabIndex = 19;
-            this.label11.Text = "Treatment";
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Clinic.Properties.Resources._4;
-            this.pictureBox7.Location = new System.Drawing.Point(12, 526);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(48, 67);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 17;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Clinic.Properties.Resources._5;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 612);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(48, 67);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 13;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Clinic.Properties.Resources._6;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 441);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(48, 67);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Clinic.Properties.Resources._3;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 346);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(48, 67);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Clinic.Properties.Resources._2;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 254);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 67);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Clinic.Properties.Resources._1;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 166);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 67);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Clinic.Properties.Resources.LOGO;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(78, 103);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.button3.BackColor = System.Drawing.Color.Teal;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("NSimSun", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(633, 194);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(155, 52);
+            this.button3.TabIndex = 31;
+            this.button3.Text = "Delete";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Treatment
             // 
@@ -379,17 +414,17 @@ namespace Clinic
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1214, 717);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.TreatmentDGV);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Treatment";
             this.Text = "Treatment";
+            this.Load += new System.EventHandler(this.Treatment_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -397,6 +432,7 @@ namespace Clinic
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TreatmentDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -405,12 +441,12 @@ namespace Clinic
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TreatDesc;
+        private System.Windows.Forms.TextBox TretNameTb;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TreatCost;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label7;
@@ -426,10 +462,12 @@ namespace Clinic
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView TreatmentDGV;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }

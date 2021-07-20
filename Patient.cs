@@ -111,7 +111,7 @@ namespace Clinic
                 try
                 {
                     string query = "Update PatientTbl set PatName='" + PatNameTb.Text + "',PatPhone='" + PatPhooneTb.Text + "',PatAdress='" + AdressTb.Text + "',PatDOB='" + DOBDate.Value.Date + "',PatGender='" + GenderTb.SelectedItem.ToString() + "',PatAllergies='" + AllergyTb.Text + "' where Patid=" + key + ";";
-                    Pat.DeletePatietnt(query);
+                    Pat.UpdatePatietnt(query);
                     MessageBox.Show("Patient Succesfully Updated");
                     populate();
                 }
