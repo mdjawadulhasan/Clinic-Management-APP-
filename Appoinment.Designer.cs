@@ -117,6 +117,7 @@ namespace Clinic
             // 
             // Time
             // 
+            this.Time.Checked = false;
             this.Time.Font = new System.Drawing.Font("Rockwell", 13.8F);
             this.Time.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.Time.Location = new System.Drawing.Point(538, 96);

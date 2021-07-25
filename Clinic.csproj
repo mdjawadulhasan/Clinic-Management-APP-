@@ -88,6 +88,7 @@
       <DependentUpon>Treatment.cs</DependentUpon>
     </Compile>
     <Compile Include="Treatments.cs" />
+    <Compile Include="User.cs" />
     <Compile Include="Users.cs">
       <SubType>Form</SubType>
     </Compile>
