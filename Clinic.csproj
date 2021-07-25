@@ -52,6 +52,7 @@
     <Compile Include="Appoinment.Designer.cs">
       <DependentUpon>Appoinment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Appointments.cs" />
     <Compile Include="ConnectionString.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>

@@ -32,15 +32,14 @@ namespace Clinic
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Time = new System.Windows.Forms.DateTimePicker();
+            this.Date = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.TreatmentCb = new System.Windows.Forms.ComboBox();
+            this.PatientCb = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,24 +49,27 @@ namespace Clinic
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.Appointmentdgv = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Appointmentdgv)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -83,15 +85,17 @@ namespace Clinic
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.dateTimePicker2);
-            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.Time);
+            this.panel2.Controls.Add(this.Date);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.TreatmentCb);
+            this.panel2.Controls.Add(this.PatientCb);
             this.panel2.Location = new System.Drawing.Point(274, 79);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(946, 242);
@@ -103,29 +107,30 @@ namespace Clinic
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("NSimSun", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(414, 182);
+            this.button1.Location = new System.Drawing.Point(274, 182);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 52);
             this.button1.TabIndex = 23;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dateTimePicker2
+            // Time
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Rockwell", 13.8F);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(538, 96);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(374, 35);
-            this.dateTimePicker2.TabIndex = 22;
+            this.Time.Font = new System.Drawing.Font("Rockwell", 13.8F);
+            this.Time.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.Time.Location = new System.Drawing.Point(538, 96);
+            this.Time.Name = "Time";
+            this.Time.Size = new System.Drawing.Size(374, 35);
+            this.Time.TabIndex = 22;
             // 
-            // dateTimePicker1
+            // Date
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Rockwell", 13.8F);
-            this.dateTimePicker1.Location = new System.Drawing.Point(538, 25);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(374, 35);
-            this.dateTimePicker1.TabIndex = 21;
+            this.Date.Font = new System.Drawing.Font("Rockwell", 13.8F);
+            this.Date.Location = new System.Drawing.Point(538, 25);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(374, 35);
+            this.Date.TabIndex = 21;
             // 
             // label12
             // 
@@ -172,34 +177,23 @@ namespace Clinic
             this.label9.Text = "Patient";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // comboBox2
+            // TreatmentCb
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Rockwell", 13.8F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(168, 101);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(250, 34);
-            this.comboBox2.TabIndex = 1;
+            this.TreatmentCb.Font = new System.Drawing.Font("Rockwell", 13.8F);
+            this.TreatmentCb.FormattingEnabled = true;
+            this.TreatmentCb.Location = new System.Drawing.Point(168, 101);
+            this.TreatmentCb.Name = "TreatmentCb";
+            this.TreatmentCb.Size = new System.Drawing.Size(250, 34);
+            this.TreatmentCb.TabIndex = 1;
             // 
-            // comboBox1
+            // PatientCb
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Rockwell", 13.8F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(168, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(250, 34);
-            this.comboBox1.TabIndex = 0;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(289, 390);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(931, 331);
-            this.dataGridView1.TabIndex = 24;
+            this.PatientCb.Font = new System.Drawing.Font("Rockwell", 13.8F);
+            this.PatientCb.FormattingEnabled = true;
+            this.PatientCb.Location = new System.Drawing.Point(168, 25);
+            this.PatientCb.Name = "PatientCb";
+            this.PatientCb.Size = new System.Drawing.Size(250, 34);
+            this.PatientCb.TabIndex = 0;
             // 
             // label13
             // 
@@ -314,6 +308,27 @@ namespace Clinic
             this.panel1.Size = new System.Drawing.Size(268, 764);
             this.panel1.TabIndex = 0;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(76, 556);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(124, 25);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Dashboard";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Clinic.Properties.Resources._4;
+            this.pictureBox7.Location = new System.Drawing.Point(12, 531);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(48, 67);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 15;
+            this.pictureBox7.TabStop = false;
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Clinic.Properties.Resources._5;
@@ -374,26 +389,46 @@ namespace Clinic
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox7
+            // Appointmentdgv
             // 
-            this.pictureBox7.Image = global::Clinic.Properties.Resources._4;
-            this.pictureBox7.Location = new System.Drawing.Point(12, 531);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(48, 67);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 15;
-            this.pictureBox7.TabStop = false;
+            this.Appointmentdgv.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.Appointmentdgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Appointmentdgv.Location = new System.Drawing.Point(274, 405);
+            this.Appointmentdgv.Name = "Appointmentdgv";
+            this.Appointmentdgv.RowHeadersWidth = 51;
+            this.Appointmentdgv.RowTemplate.Height = 24;
+            this.Appointmentdgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Appointmentdgv.Size = new System.Drawing.Size(931, 331);
+            this.Appointmentdgv.TabIndex = 32;
+            this.Appointmentdgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Appointmentdgv_CellContentClick);
             // 
-            // label14
+            // button3
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(76, 556);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(124, 25);
-            this.label14.TabIndex = 16;
-            this.label14.Text = "Dashboard";
+            this.button3.BackColor = System.Drawing.Color.Teal;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("NSimSun", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(628, 182);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(155, 52);
+            this.button3.TabIndex = 34;
+            this.button3.Text = "Cancel";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Teal;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("NSimSun", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(450, 182);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(155, 52);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "Edit";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Appoinment
             // 
@@ -401,26 +436,27 @@ namespace Clinic
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1232, 764);
+            this.Controls.Add(this.Appointmentdgv);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Appoinment";
             this.Text = "Appoinment";
+            this.Load += new System.EventHandler(this.Appoinment_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Appointmentdgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -429,16 +465,15 @@ namespace Clinic
         #endregion
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox PatientCb;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox TreatmentCb;
+        private System.Windows.Forms.DateTimePicker Time;
+        private System.Windows.Forms.DateTimePicker Date;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
@@ -456,5 +491,8 @@ namespace Clinic
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.DataGridView Appointmentdgv;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
     }
 }
