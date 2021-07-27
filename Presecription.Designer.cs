@@ -29,6 +29,7 @@ namespace Clinic
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Presecription));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -46,6 +47,7 @@ namespace Clinic
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.TreatTb = new System.Windows.Forms.TextBox();
             this.QtyTb = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -56,8 +58,10 @@ namespace Clinic
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.TreatTb = new System.Windows.Forms.TextBox();
             this.PrescriptionDGV = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -270,6 +274,16 @@ namespace Clinic
             this.panel2.Size = new System.Drawing.Size(920, 296);
             this.panel2.TabIndex = 17;
             // 
+            // TreatTb
+            // 
+            this.TreatTb.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.TreatTb.Font = new System.Drawing.Font("Rockwell", 13.8F);
+            this.TreatTb.Location = new System.Drawing.Point(604, 24);
+            this.TreatTb.Name = "TreatTb";
+            this.TreatTb.Size = new System.Drawing.Size(250, 35);
+            this.TreatTb.TabIndex = 37;
+            this.TreatTb.TextChanged += new System.EventHandler(this.TreatTb_TextChanged);
+            // 
             // QtyTb
             // 
             this.QtyTb.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -377,16 +391,6 @@ namespace Clinic
             this.label10.TabIndex = 18;
             this.label10.Text = "Treatment";
             // 
-            // TreatTb
-            // 
-            this.TreatTb.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.TreatTb.Font = new System.Drawing.Font("Rockwell", 13.8F);
-            this.TreatTb.Location = new System.Drawing.Point(604, 24);
-            this.TreatTb.Name = "TreatTb";
-            this.TreatTb.Size = new System.Drawing.Size(250, 35);
-            this.TreatTb.TabIndex = 37;
-            this.TreatTb.TextChanged += new System.EventHandler(this.TreatTb_TextChanged);
-            // 
             // PrescriptionDGV
             // 
             this.PrescriptionDGV.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
@@ -398,9 +402,37 @@ namespace Clinic
             this.PrescriptionDGV.RowHeadersWidth = 51;
             this.PrescriptionDGV.RowTemplate.Height = 24;
             this.PrescriptionDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.PrescriptionDGV.Size = new System.Drawing.Size(931, 331);
+            this.PrescriptionDGV.Size = new System.Drawing.Size(931, 289);
             this.PrescriptionDGV.TabIndex = 31;
             this.PrescriptionDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PrescriptionDGV_CellContentClick);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Teal;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("NSimSun", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(675, 663);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(143, 45);
+            this.button2.TabIndex = 38;
+            this.button2.Text = "Print";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // Presecription
             // 
@@ -408,6 +440,7 @@ namespace Clinic
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1214, 717);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.PrescriptionDGV);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -461,5 +494,8 @@ namespace Clinic
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox TreatTb;
         private System.Windows.Forms.DataGridView PrescriptionDGV;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

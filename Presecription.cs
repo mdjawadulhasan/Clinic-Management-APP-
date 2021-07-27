@@ -134,5 +134,22 @@ namespace Clinic
                 key = Convert.ToInt32(PrescriptionDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(bitmap, 0, 0);
+        }
+        Bitmap bitmap;
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int height = PrescriptionDGV.Height;
+            PrescriptionDGV.Height = PrescriptionDGV.RowCount * PrescriptionDGV.RowTemplate.Height * 2;
+            bitmap = new Bitmap(PrescriptionDGV.Width, PrescriptionDGV.Height);
+            PrescriptionDGV.DrawToBitmap(bitmap, new Rectangle(0, 10, PrescriptionDGV.Width, PrescriptionDGV.Height));
+            PrescriptionDGV.Height = height;
+            printPreviewDialog1.ShowDialog();
+        }
+
+        
     }
 }
