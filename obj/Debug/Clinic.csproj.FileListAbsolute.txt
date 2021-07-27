@@ -15,3 +15,8 @@ C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Presecription.resources
 C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Treatment.resources
 C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Users.resources
 C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.AdminLogin.resources
+C:\Users\Lenovo\Desktop\Clinic\bin\Debug\CircularProgressBar.dll
+C:\Users\Lenovo\Desktop\Clinic\bin\Debug\WinFormAnimation.dll
+C:\Users\Lenovo\Desktop\Clinic\bin\Debug\CircularProgressBar.xml
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.DashBoard.resources
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.csproj.CopyComplete
