@@ -16,7 +16,7 @@ namespace Clinic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Presecription());
+            Application.Run(new Login());
         }
     }
 }

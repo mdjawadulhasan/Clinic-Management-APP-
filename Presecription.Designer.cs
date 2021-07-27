@@ -400,6 +400,7 @@ namespace Clinic
             this.PrescriptionDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.PrescriptionDGV.Size = new System.Drawing.Size(931, 331);
             this.PrescriptionDGV.TabIndex = 31;
+            this.PrescriptionDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PrescriptionDGV_CellContentClick);
             // 
             // Presecription
             // 

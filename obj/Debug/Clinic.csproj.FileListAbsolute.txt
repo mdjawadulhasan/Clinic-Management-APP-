@@ -14,3 +14,4 @@ C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Patient.resources
 C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Presecription.resources
 C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Treatment.resources
 C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.Users.resources
+C:\Users\Lenovo\Desktop\Clinic\obj\Debug\Clinic.AdminLogin.resources

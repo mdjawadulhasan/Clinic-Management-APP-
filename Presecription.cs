@@ -99,7 +99,7 @@ namespace Clinic
             {
                 Pat.AddPatient(query);
                 MessageBox.Show("Treatment Successfully Added");
-                //populate();
+                populate();
                 //clear();
             }
             catch (Exception Ex)
@@ -116,6 +116,23 @@ namespace Clinic
         private void TreatTb_TextChanged(object sender, EventArgs e)
         {
             GetPrice();
+        }
+        int key = 0;
+        private void PrescriptionDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            PatId.SelectedValue = PrescriptionDGV.SelectedRows[0].Cells[1].Value.ToString();
+            TreatTb.Text = PrescriptionDGV.SelectedRows[0].Cells[2].Value.ToString();
+            TreatCostTb.Text = PrescriptionDGV.SelectedRows[0].Cells[3].Value.ToString();
+            Mdcntb.Text = PrescriptionDGV.SelectedRows[0].Cells[4].Value.ToString();
+            QtyTb.Text = PrescriptionDGV.SelectedRows[0].Cells[5].Value.ToString();
+            if (TreatTb.Text == "")
+            {
+                key = 0;
+            }
+            else
+            {
+                key = Convert.ToInt32(PrescriptionDGV.SelectedRows[0].Cells[0].Value.ToString());
+            }
         }
     }
 }
